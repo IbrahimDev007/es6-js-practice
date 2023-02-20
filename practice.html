@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="cards" class=" bg-orange-700 p-4 cards flex ">
+    <div class="grid grid-cols-4 w-[70%] bg-red-700 m-2 gap-2">
+      <div class="border-2 bg-slate-700 p-2 h-fit ">
+        <p >id=<input id="1st-id" class="1st-id"type="text">name=<input type="text"id="1st-name" class="1st-name">marks=<input type="text" id="1st-marks" > <button class="btn bg-red-400 rounded-md text-white px-4 mt-2" id="1st-submit">submit</button></p>
+      </div>
+      <div class="border-2 bg-slate-700 p-2 h-fit">
+        <p >id=<input id="2nd-id" class="2nd-id"type="text">name=<input type="text"id="2nd-name" class="2nd-name">marks=<input type="text" id="2nd-marks" class="2nd-marks"> <button class="btn bg-red-400 rounded-md text-white px-4 mt-2"id="2nd-submit">submit</button></p>
+      </div>
+      <div class="border-2 bg-slate-700 p-2 h-fit">
+        <p >id=<input id="3rd-id" class="3rd-id"type="text">name=<input type="text"id="3rd-name" class="3rd-name">marks=<input type="text" id="3rd-marks" class="3rd-marks"><button class="btn bg-red-400 rounded-md text-white px-4 mt-2"id="3rd-submit">submit</button></p>
+      </div>
+      <div class="border-2 bg-slate-700 p-2 h-fit">
+        <p >id=<input id="4th-id" class="4th-id"type="text">name=<input type="text"id="4th-name" class="4th-name">marks=<input type="text" id="4th-marks" class="4th-marks"> <button class="btn bg-red-400 rounded-md text-white px-4 mt-2"id="4th-submit">submit</button></p>
+      </div>
+     
+    </div>
+    <div class=" bg-yellow-700 w-[30%] flex   justify-center">
+        <table class="w-full ">
+            <thead><tr>
+                <th>ID:</th>
+                <td>Name:</td>
+                <td>Marks:</td>
+            </tr></thead>
+            <tbody id="table-body" class="table-body">
+                <!-- <tr>
+                    <th>1</th>
+                    <td>alex</td>
+                    <td>80</td>
+                </tr> -->
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="./practice.js"></script>
+</body>
+</html>
