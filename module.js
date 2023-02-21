@@ -1,20 +1,20 @@
-// let jock="how r you"
-// console.log(45);
-// console.log(jock);
+let jock="how r you"
+console.log(45);
+console.log(jock);
 
-// console.log('ww');
-// console.log(2333);
+console.log('ww');
+console.log(2333);
 
-// try{
-//     console.log(dist);
-//     console.log('how ru');
-// }
-// catch(e){
-//   console.log('eror');
-// }
-// finally{
-//     console.log('finally');
-// }
+try{
+    console.log(dist);
+    console.log('how ru');
+}
+catch(e){
+  console.log('eror');
+}
+finally{
+    console.log('finally');
+}
 
 for (let index = 0; index <5; index++) {
     const element = index+1;
