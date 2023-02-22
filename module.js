@@ -7,10 +7,13 @@ console.log(2333);
 
 try{
     console.log(dist);
-    console.log('how ru');
+    
+   
 }
 catch(e){
+
   console.log('eror');
+ 
 }
 finally{
     console.log('finally');

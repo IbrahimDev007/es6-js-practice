@@ -42,7 +42,7 @@ try {
     console.log(student['favouretPlace']['banglsdesh'][2]);  
 } catch (error) {
     console.log('have some error in statement');
-}function namek(params) {
+}function info(params) {
 
   let home ='comilla';
   console.log(home);
@@ -55,4 +55,14 @@ try {
 // scope local globAl 
 // console.log(village);
 }
-namek()
+info();
+// map filter reduce find 
+let age = [2,5,3,44];
+let age1=age.map(func=>func*2)
+let age2=age.filter(num=>num>3);
+let age3=age2.find(num=> num<77);
+let age4=age.filter((num,mun)=>num>mun);
+let age5=age.reduce((cur,prev)=>(cur+prev),0);
+
+console.log(age4,age5,age2,age1,age3);
+
