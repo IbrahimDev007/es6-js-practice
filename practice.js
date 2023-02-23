@@ -20,15 +20,27 @@ let tablerowAdd = (id, name, marks) => {
     <th id='valueId-${serial}'>${serial}</th>
     <td>${id}</td>
     <td>${name}</td>
-    <td>${marks}</td>
-    <td><button  id="change"class="btn btn-sm bg-blue-700 change"  onclick='changeNumber()'>change</button></td>
+    <td class='marks'>${marks}</td>
+    <td ><button  id="change"class="btn btn-sm btn-change bg-blue-700 change"  onclick='changeNumber(${serial})'>change</button></td>
 </tr>`;
+//  wrong to learn => you have to declear this block where you use classes
     tbody.appendChild(row);
+    const button=document.getElementsByClassName('btn-change')
+    for (const btn of button) {
+        btn.addEventListener('click',function (e) {
+            const parent=e.target.parentNode.parentNode;
+          const marks = parent.querySelector('.marks');
+          console.log(marks);
+          marks.innerText=parseFloat(marks.innerText)*2
+        })
+        
+    }
 
 }
-function changeNumber() {
+function changeNumber(serial) {
+     //wrong to learn you should parameter in function when you change here globally change every parameter 
     {
-
+   
         const id = parseInt(document.getElementById(`valueId-${serial}`).innerText);
         document.getElementById(`valueId-${serial}`).innerText = id * 2;
 

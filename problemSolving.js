@@ -16,8 +16,9 @@ let sqrAvg = (sqr)=>{
     let sqrs=0;
     
 for (let i = 0; i < sqr.length; i++) {
+   
     sqrs=sqrs+Math.pow(sqr[i],2)
-
+  console.log(sqrs);
 };
 return sqrs/sqr.length
 
